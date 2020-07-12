@@ -38,7 +38,7 @@ table, tr, td{
 	linear-gradient(0deg, rgba(26,26,28, 0.5), rgba(151,117,105, 0.7)), 
 	url("https://i.imgur.com/WeL7BGa.jpg");
 	height: 100vh;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -261,13 +261,17 @@ h1.name{
 	font-size: 60px;
 	line-height: 0;
 }
-.outer-intro{
- top: 40%;
-}
 #projects{
 	height: auto;
 }
 
-
-
+.contact-headline{
+	font-size: 55px;
+}
+.project-headline{
+	font-size: 30px;
+}
+.underline-text {
+    width: 140px;
+}
 }
