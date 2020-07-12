@@ -248,6 +248,15 @@ a.social-links{
 	color: #E47770;
 }
 @media screen and (max-width: 900px) {
+#welcome-section{
+background:
+linear-gradient(0deg, rgba(26,26,28, 0.5), rgba(151,117,105, 0.7)), 
+url("https://i.imgur.com/QTlE2p8.jpg");
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
 .nav-container{
 	display: flex;
     align-items: center;
