@@ -343,11 +343,12 @@ height: 100%;
   	width: 100%;
 }
 h1.name{
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 1;
 }
 p.name{
 	margin: 10px 0 0; 
+	font-size: 20px;
 }
 #projects{
 	height: auto;
@@ -379,5 +380,8 @@ p.name{
 }
 .circle{
 	padding: 0;
+}
+.nameborder{
+	margin: 0 10px;
 }
 }
