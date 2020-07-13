@@ -1,4 +1,17 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+	background:rgb(26,26,28,0.9);
+ border: solid 3px transparent;
 
+}
+::-webkit-scrollbar-thumb {
+ background: rgb(209,132,122, 0.9);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 html, body{
 	font-family: 'Candara', sans-serif;
 	color: #ffffff;
@@ -9,6 +22,7 @@ html, body{
  	margin: 0;
 	
 }
+
 
 li{
 	list-style-type: none;
@@ -32,6 +46,9 @@ table, tr, td{
 	text-align: center;
 	margin: 0;
 	padding: 0;
+}
+.padB40{
+	padding-bottom: 40px;
 }
 #welcome-section{
 	background:
@@ -78,33 +95,55 @@ table, tr, td{
 .outer-intro{
 	position: absolute;
     right: 0;
-    top: 45%;
+    top: 35%;
   	width: 100%;
     color: #E7D3CC;
 }
 .inner-intro{
 	text-align: center;
+	
+}
+.nameborder{
+	border: 5px double#E7D3CC;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 80px 0 95px;
 }
 h1.name{
 	font-size: 90px;
-	line-height: 0.5;
+	line-height: 1.2;
 }
 p.name{
 	font-size: 40px;
     color: #1A1A1C;
-    line-height: 1;
+    line-height: 1.5;
     font-style: italic;
+    background: rgb(175,96,92,0.6);
+    margin: 0;
 }
 #projects{
-	background-color: rgb(209,132,122, 0.9);
+	background: linear-gradient(0deg, rgba(175,96,92, 0.5), rgba(175,96,92, 0.5)), url(https://i.imgur.com/Bc88F7W.png);
 	height: auto;
-	background-attachment: fixed;
 }
 .project-headline{
 	font-size: 35px;
 	margin: 0;
-	padding-top: 30px;
 	color: rgb(26,26,28);
+	background: rgb(175,96,92,0.2);
+}
+.width-separator1{
+	max-width: 310px;
+	margin: 0 auto;
+	padding: 60px 0 20px;
+}
+.width-separator2{
+	max-width: 370px;
+	margin: 0 auto;
+	padding: 40px 0 20px;
+}
+.circle{
+	font-size: 40px;
+    padding: 0 30px;
 }
 .underline-text{
 	width: 200px;
@@ -122,28 +161,48 @@ p.name{
     grid-gap: 30px;
 }
 .inner-pcontainer{
-	background-color: rgb(175,96,92,0.8);
+	background-color: rgb(26,26,28,0.8);
 	border-radius: 5px;
-	border: 3px solid #5D1138;
-	border-style: double;
 	max-width: 350px;
 	width: 100%;
-	height: 240px;
+	height: auto;
 	text-align: center;
 	margin: 10px 20px;
+}
+.inner-pcontainer:hover .proj-image{
+	-ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3); 
 }
 .proj-image{
 	width: 345px;
     height: 180px;
+    transition: .5s ease;
+  	backface-visibility: hidden;
+  	opacity: 1;
+  	margin-top:3px;
 
 }
-p.proj-text{
+.proj-text{
 	margin: 10px 0;
 	font-weight: 800px;
 }
+.middle-text{
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .middle-text {
+  opacity: 1;
+}
 
 #contact{
-	background-color: rgb(94,18,57, 0.9);
+	background: linear-gradient(0deg, rgba(26,26,28, 0.5), rgb(150,100,91, 0.7));
 	height: 95vh;
 	background-attachment: fixed;
 	position: relative;
@@ -159,7 +218,7 @@ p.proj-text{
 	margin: 0;
 	text-align: center;
 	font-size: 80px;
-	color: #E7D3CC;
+	color: rgb(26,26,28, 0.8);
 }
 .contact-desc{
 	text-align: center;
@@ -233,6 +292,7 @@ a.social-links{
 
 .resume{
 	text-align: center;
+	margin-bottom: 20px;
 }
 .btn {
     background-color: #E47770;
@@ -246,7 +306,16 @@ a.social-links{
 .btn:hover{
 	background-color: rgb(26,26,28);
 	color: #E47770;
+
 }
+.inner-box{
+	padding: 30px 20px 50px;
+    background: linear-gradient(0deg, rgba(150,100,91, 0.6),rgba(150,100,91, 0.5), rgba(209,132,122, 0.3)), url(https://i.imgur.com/WyJgEjE.png);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(209,132,122, 0.6);
+}
+
+
 @media screen and (max-width: 700px) {
 #welcome-section{
 background:
@@ -272,7 +341,10 @@ height: 100%;
 }
 h1.name{
 	font-size: 60px;
-	line-height: 0;
+	line-height: 1;
+}
+p.name{
+	margin: 10px 0 0; 
 }
 #projects{
 	height: auto;
